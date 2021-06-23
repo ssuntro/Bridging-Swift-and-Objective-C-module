@@ -16,6 +16,7 @@
 		BBE62C322683764E003242F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE62C312683764E003242F1 /* main.m */; };
 		BBE62C3C2683764E003242F1 /* ImportingSwiftIntoObjective_CProjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE62C3B2683764E003242F1 /* ImportingSwiftIntoObjective_CProjTests.m */; };
 		BBE62C472683764E003242F1 /* ImportingSwiftIntoObjective_CProjUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE62C462683764E003242F1 /* ImportingSwiftIntoObjective_CProjUITests.m */; };
+		BBE62C56268385C4003242F1 /* SwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE62C55268385C4003242F1 /* SwiftFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		BBE62C422683764E003242F1 /* ImportingSwiftIntoObjective-CProjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImportingSwiftIntoObjective-CProjUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE62C462683764E003242F1 /* ImportingSwiftIntoObjective_CProjUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportingSwiftIntoObjective_CProjUITests.m; sourceTree = "<group>"; };
 		BBE62C482683764E003242F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE62C54268385C3003242F1 /* ImportingSwiftIntoObjective-CProj-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImportingSwiftIntoObjective-CProj-Bridging-Header.h"; sourceTree = "<group>"; };
+		BBE62C55268385C4003242F1 /* SwiftFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +112,14 @@
 				BBE62C222683764C003242F1 /* SceneDelegate.h */,
 				BBE62C232683764C003242F1 /* SceneDelegate.m */,
 				BBE62C252683764C003242F1 /* ViewController.h */,
+				BBE62C55268385C4003242F1 /* SwiftFile.swift */,
 				BBE62C262683764C003242F1 /* ViewController.m */,
 				BBE62C282683764C003242F1 /* Main.storyboard */,
 				BBE62C2B2683764E003242F1 /* Assets.xcassets */,
 				BBE62C2D2683764E003242F1 /* LaunchScreen.storyboard */,
 				BBE62C302683764E003242F1 /* Info.plist */,
 				BBE62C312683764E003242F1 /* main.m */,
+				BBE62C54268385C3003242F1 /* ImportingSwiftIntoObjective-CProj-Bridging-Header.h */,
 			);
 			path = "ImportingSwiftIntoObjective-CProj";
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				TargetAttributes = {
 					BBE62C1B2683764B003242F1 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					BBE62C362683764E003242F1 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -266,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE62C56268385C4003242F1 /* SwiftFile.swift in Sources */,
 				BBE62C272683764C003242F1 /* ViewController.m in Sources */,
 				BBE62C212683764C003242F1 /* AppDelegate.m in Sources */,
 				BBE62C322683764E003242F1 /* main.m in Sources */,
@@ -441,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ImportingSwiftIntoObjective-CProj/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,6 +457,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Ann-Siroratt.ImportingSwiftIntoObjective-CProj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImportingSwiftIntoObjective-CProj/ImportingSwiftIntoObjective-CProj-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -458,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ImportingSwiftIntoObjective-CProj/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,6 +478,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Ann-Siroratt.ImportingSwiftIntoObjective-CProj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImportingSwiftIntoObjective-CProj/ImportingSwiftIntoObjective-CProj-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -473,6 +487,7 @@
 		BBE62C4F2683764E003242F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ImportingSwiftIntoObjective-CProjTests/Info.plist";
@@ -492,6 +507,7 @@
 		BBE62C502683764E003242F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ImportingSwiftIntoObjective-CProjTests/Info.plist";
@@ -511,6 +527,7 @@
 		BBE62C522683764E003242F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ImportingSwiftIntoObjective-CProjUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,6 +545,7 @@
 		BBE62C532683764E003242F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ImportingSwiftIntoObjective-CProjUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

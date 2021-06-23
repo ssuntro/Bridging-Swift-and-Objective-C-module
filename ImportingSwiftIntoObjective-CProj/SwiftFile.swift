@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+@objc class Human: NSObject {
+    @objc var age: Int = 0
+}

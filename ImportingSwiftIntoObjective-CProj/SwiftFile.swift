@@ -17,7 +17,7 @@ import UIKit
 @objc class Animator: NSObject {
     @objc func exe(with view: UIView)  {
         let animationView = AnimationView()
-        let path = Bundle.main.path(forResource: "data",
+        let path = Bundle.main.path(forResource: "dino",
                                         ofType: "json") ?? ""
         animationView.animation = Animation.filepath(path)
         animationView.frame = view.bounds

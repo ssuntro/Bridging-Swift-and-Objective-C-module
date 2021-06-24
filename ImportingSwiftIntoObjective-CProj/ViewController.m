@@ -19,6 +19,9 @@
     // Do any additional setup after loading the view.
     Human *a = [[Human alloc] init];
     printf("Annja: %@", a.age);
+    
+    Animator * b = [[Animator alloc] init];
+    [b exeWith: self.view];
 }
 
 

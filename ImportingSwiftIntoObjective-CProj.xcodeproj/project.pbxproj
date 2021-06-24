@@ -18,6 +18,8 @@
 		BBE62C472683764E003242F1 /* ImportingSwiftIntoObjective_CProjUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE62C462683764E003242F1 /* ImportingSwiftIntoObjective_CProjUITests.m */; };
 		BBE62C56268385C4003242F1 /* SwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE62C55268385C4003242F1 /* SwiftFile.swift */; };
 		BBE62C5926838B44003242F1 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BBE62C5826838B44003242F1 /* Lottie */; };
+		BBE62C5B2684D5F0003242F1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = BBE62C5A2684D5F0003242F1 /* data.json */; };
+		BBE62C5F2684D73E003242F1 /* dino.json in Resources */ = {isa = PBXBuildFile; fileRef = BBE62C5E2684D73E003242F1 /* dino.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		BBE62C482683764E003242F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBE62C54268385C3003242F1 /* ImportingSwiftIntoObjective-CProj-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImportingSwiftIntoObjective-CProj-Bridging-Header.h"; sourceTree = "<group>"; };
 		BBE62C55268385C4003242F1 /* SwiftFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFile.swift; sourceTree = "<group>"; };
+		BBE62C5A2684D5F0003242F1 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		BBE62C5E2684D73E003242F1 /* dino.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dino.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +117,10 @@
 				BBE62C202683764C003242F1 /* AppDelegate.m */,
 				BBE62C222683764C003242F1 /* SceneDelegate.h */,
 				BBE62C232683764C003242F1 /* SceneDelegate.m */,
+				BBE62C5E2684D73E003242F1 /* dino.json */,
 				BBE62C252683764C003242F1 /* ViewController.h */,
 				BBE62C55268385C4003242F1 /* SwiftFile.swift */,
+				BBE62C5A2684D5F0003242F1 /* data.json */,
 				BBE62C262683764C003242F1 /* ViewController.m */,
 				BBE62C282683764C003242F1 /* Main.storyboard */,
 				BBE62C2B2683764E003242F1 /* Assets.xcassets */,
@@ -256,6 +262,8 @@
 				BBE62C2F2683764E003242F1 /* LaunchScreen.storyboard in Resources */,
 				BBE62C2C2683764E003242F1 /* Assets.xcassets in Resources */,
 				BBE62C2A2683764C003242F1 /* Main.storyboard in Resources */,
+				BBE62C5F2684D73E003242F1 /* dino.json in Resources */,
+				BBE62C5B2684D5F0003242F1 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

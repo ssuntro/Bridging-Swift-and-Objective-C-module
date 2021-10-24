@@ -1,5 +1,5 @@
 # Bridging Swift and Objective-C module
-
+This is a part of Mobile Legacy modernization project
 ## Development
 - make swift module accessible from Obj-c module(every commit before 00ae8e1ee) 🎉 ✔️
 - make Objective-c module accessible from Swift module(00ae8e1ee) 🎉 ✔️

@@ -9,6 +9,7 @@ import Foundation
 import Lottie
 import UIKit
 
+
 @objc class Human: NSObject {
     @objc var age: Int = 0
 }
@@ -27,5 +28,11 @@ import UIKit
         view.addSubview(animationView)
         view.bringSubviewToFront(animationView)
         animationView.play()
+    }
+}
+
+@objc class XX: NSObject {
+    @objc func perform() {
+        let vc = ViewController()
     }
 }

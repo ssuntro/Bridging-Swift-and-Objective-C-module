@@ -1,4 +1,4 @@
-# ImportingSwiftIntoObjective-CProj
+# Bridging Swift and Objective-C module
 
 ## Development
 - make swift module accessible from Obj-c module(every commit before 00ae8e1ee) 🎉 ✔️

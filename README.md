@@ -1,11 +1,11 @@
 # ImportingSwiftIntoObjective-CProj
 
 ## Development
-- make swift module accessible from Obj-c module 🎉 ✔️
-- make Objective-c module accessible from Swift module 🎉 ✔️
+- make swift module accessible from Obj-c module(every commit before 00ae8e1ee) 🎉 ✔️
+- make Objective-c module accessible from Swift module(00ae8e1ee) 🎉 ✔️
 
 Asset
-- swift lib(https://github.com/airbnb/lottie-ios)
+- swift library (https://github.com/airbnb/lottie-ios)
 
 ## Unit Testing
 According to maintain and readability suggest to use swift-based in order to do a unit testing.

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB2A7E982770307F00F327FD /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = BB2A7E972770307F00F327FD /* FirebaseCrashlytics */; };
 		BB5356C8276F92B9005D5CF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB5356C7276F92B9005D5CF6 /* GoogleService-Info.plist */; };
+		BBC97D152770CA780072B1F1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BBC97D142770CA780072B1F1 /* FirebaseAnalytics */; };
+		BBC97D172770CA780072B1F1 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = BBC97D162770CA780072B1F1 /* FirebaseCrashlytics */; };
 		BBE62C212683764C003242F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE62C202683764C003242F1 /* AppDelegate.m */; };
 		BBE62C242683764C003242F1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE62C232683764C003242F1 /* SceneDelegate.m */; };
 		BBE62C272683764C003242F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE62C262683764C003242F1 /* ViewController.m */; };
@@ -72,8 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC97D172770CA780072B1F1 /* FirebaseCrashlytics in Frameworks */,
+				BBC97D152770CA780072B1F1 /* FirebaseAnalytics in Frameworks */,
 				BBE62C5926838B44003242F1 /* Lottie in Frameworks */,
-				BB2A7E982770307F00F327FD /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +176,8 @@
 			name = "ImportingSwiftIntoObjective-CProj";
 			packageProductDependencies = (
 				BBE62C5826838B44003242F1 /* Lottie */,
-				BB2A7E972770307F00F327FD /* FirebaseCrashlytics */,
+				BBC97D142770CA780072B1F1 /* FirebaseAnalytics */,
+				BBC97D162770CA780072B1F1 /* FirebaseCrashlytics */,
 			);
 			productName = "ImportingSwiftIntoObjective-CProj";
 			productReference = BBE62C1C2683764B003242F1 /* ImportingSwiftIntoObjective-CProj.app */;
@@ -249,7 +252,7 @@
 			mainGroup = BBE62C132683764B003242F1;
 			packageReferences = (
 				BBE62C5726838B44003242F1 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				BB2A7E962770307F00F327FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BBC97D132770CA780072B1F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = BBE62C1D2683764B003242F1 /* Products */;
 			projectDirPath = "";
@@ -654,7 +657,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BB2A7E962770307F00F327FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		BBC97D132770CA780072B1F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -673,9 +676,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BB2A7E972770307F00F327FD /* FirebaseCrashlytics */ = {
+		BBC97D142770CA780072B1F1 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BB2A7E962770307F00F327FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = BBC97D132770CA780072B1F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		BBC97D162770CA780072B1F1 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBC97D132770CA780072B1F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
 		};
 		BBE62C5826838B44003242F1 /* Lottie */ = {

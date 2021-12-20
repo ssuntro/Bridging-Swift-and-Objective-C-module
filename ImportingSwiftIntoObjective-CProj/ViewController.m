@@ -22,7 +22,18 @@
     
     Animator * b = [[Animator alloc] init];
     [b exeWith: self.view];
+    [self crashButton];
+}
+- (void)crashButton {
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(20, 50, 100, 30);
+    [button setTitle:@"Test Crash" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(crashButtonTapped:)
+        forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
 
-
+-(IBAction)crashButtonTapped:(id)sender {
+    @[][1];
+}
 @end

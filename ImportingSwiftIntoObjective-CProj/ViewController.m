@@ -36,4 +36,85 @@
 -(IBAction)crashButtonTapped:(id)sender {
     @[][1];
 }
+//MARK: - Before Network calling
+//[[FIRCrashlytics crashlytics] setCustomValue: @"pnr" forKey: reservationNumber];
+//[[FIRCrashlytics crashlytics] setCustomValue: @"pnr" forKey: bookingSummary.reservationNumber];
+
+
+//MARK: - After Network calling
+//-(void)logNetworkError:(NSString*)responseBody {
+//    NSString* domain = [[NSString alloc] initWithFormat: @"Network error: %ld, %@", (long)self.httpResponseStatusCode, _urlRequest.URL.description];
+//
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"method: %@", _urlRequest.HTTPMethod];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"requestBody: %@", (_urlRequest.allHTTPHeaderFields==Nil? @"":_urlRequest.allHTTPHeaderFields)];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"responseJson: %@", responseBody];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"responseLocalizedDescription: %ld", (long)self.httpResponseStatusCode];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"responseErrorFailingURLKey: %@", _urlRequest.URL.description];
+//
+//
+//    NSError *errorForLog = [[NSError alloc] initWithDomain:domain
+//                                                   code: (long)self.httpResponseStatusCode
+//                                               userInfo:
+//                         @{_urlRequest.URL.description: @"url"
+//                         }];
+//    [[FIRCrashlytics crashlytics] recordError: errorForLog];
+//}
+
+//-(void)logNetworkError:(NSString*)responseBody  responseDescription:(NSString*)responseDescription responseUrlKey: (NSString*)responseUrlKey {
+//    NSString* domain = [[NSString alloc] initWithFormat: @"Network error: %ld, %@", (long)self.metric.responseCode, [self urlString]];
+//
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"method: %@", [self httpRequestMethod]];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"requestBody: %@", ([self parameters]==Nil? @"": [self parameters])];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"responseJson: %@", responseBody];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"responseLocalizedDescription: %@", responseDescription];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"responseErrorFailingURLKey: %@", responseUrlKey];
+//
+//
+//    NSError *errorForLog = [[NSError alloc] initWithDomain:domain
+//                                                   code: self.metric.responseCode
+//                                               userInfo:
+//                         @{[self urlString]: @"url"
+//                         }];
+//    [[FIRCrashlytics crashlytics] recordError: errorForLog];
+//}
+
+//-(void)logSuccessCase:(NSString*)urlString
+//    httpRequestMethod:(NSString*) httpRequestMethod
+//           parameters:(NSDictionary*) parameters {
+//
+//    if(urlString == nil) { return; }
+//    NSString* domain = [[NSString alloc] initWithFormat: @"Network success: 200, %@", urlString];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"method: %@", httpRequestMethod];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"requestBody: %@", (parameters==Nil? @"": parameters)];
+//    NSError *noError = [[NSError alloc] initWithDomain: domain
+//                                                   code: 200
+//                                               userInfo: @{urlString: @"url"
+//                                                         }];
+//    [[FIRCrashlytics crashlytics] recordError: noError];
+//}
+
+//-(void)logSuccessCase:(NSString*)urlString
+//    httpRequestMethod:(NSString*) httpRequestMethod
+//           parameters:(NSDictionary*) parameters {
+//
+//    if(urlString == nil) { return; }
+//    NSString* domain = [[NSString alloc] initWithFormat: @"Network success: 200, %@", urlString];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"method: %@", httpRequestMethod];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"requestBody: %@", (parameters==Nil? @"": parameters)];
+//    NSError *noError = [[NSError alloc] initWithDomain: domain
+//                                                   code: 200
+//                                               userInfo: @{urlString: @"url"
+//                                                         }];
+//    [[FIRCrashlytics crashlytics] recordError: noError];
+//}
+
+//-(void)logSuccessCase:(NSString*)urlString {
+//
+//    NSString* domain = [[NSString alloc] initWithFormat: @"Network success: 200, %@", urlString];
+//    [[FIRCrashlytics crashlytics] logWithFormat: @"method: GET"];
+//    NSError *noError = [[NSError alloc] initWithDomain: domain
+//                                                   code: 200
+//                                               userInfo: @{urlString: @"url"}];
+//    [[FIRCrashlytics crashlytics] recordError: noError];
+//}
 @end
